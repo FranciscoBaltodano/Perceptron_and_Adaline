@@ -1,17 +1,25 @@
 const entradas = [
-    [0, 0],
-    [0, 1],
-    [1, 0],
-    [1, 1] 
-];
+    [1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1],
+    [0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0]
+]
+const salidasEsperadas = [1, 0];
+let pesos = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; 
+
+
+// const entradas = [
+//     [0, 0],
+//     [0, 1],
+//     [1, 0],
+//     [1, 1] 
+// ];
 
 // const salidasEsperadas = [0, 0, 0, 1]; // Para la puerta AND
 // const salidasEsperadas = [0, 1, 1, 1]; // Para la puerta OR
-const salidasEsperadas = [1, 1, 1, 0]; // Para la puerta AND-NOT    
+// const salidasEsperadas = [1, 1, 1, 0]; // Para la puerta AND-NOT    
 
 
 // Paso 0 : Inicializar pesos y bias en 0
-let pesos = [0, 0]; 
+// let pesos = [0, 0]; 
 let sesgo = 0;
 const tasaDeAprendizaje = 1;
 const theta = 0;
